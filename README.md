@@ -92,8 +92,13 @@ Feedback: The system can provide real-time feedback by confirming the received c
 
 Refernces:<br>
 commands for vosk download:<br>
+```
 pip install vosk
+wget https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip
+unzip vosk-model-small-en-us-0.15.zip
+```
 
+Load the model into your Vosk speech recognition code by specifying the path to the unzipped model directory.
 
 [VOSK GitHub Repository](https://github.com/alphacep/vosk-api): The official repository for the VOSK API.<br>
 [VOSK Model Setup for ROS](https://github.com/alphacep/vosk-api/blob/master/doc/ros.md): Guide to setting up VOSK with ROS for voice control applications.<br>
