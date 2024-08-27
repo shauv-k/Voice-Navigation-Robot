@@ -58,7 +58,7 @@ BASIC SIMULATION:
 
 ## Pocketsphinx
 
-PocketSphinx is a lightweight speech recognition engine developed by Carnegie Mellon University (CMU). We will be using pocketsphinx for the purpose of speech recognition and voice control of the robot.
+PocketSphinx is a lightweight speech recognition engine developed by Carnegie Mellon University (CMU). We are using pocketsphinx with out own custom dictionary for the purpose of speech recognition and voice control of the robot.
 
 INSTALLATION:
 1) Clone the [pocketsphinx](https://github.com/cmusphinx/pocketsphinx) and [sphinxbase](https://github.com/cmusphinx/sphinxbase) repostories into your workspaces.
@@ -73,7 +73,7 @@ INSTALLATION:
 
 ## Gstreamer
 
-GStreamer is a multimedia framework that provides a pipeline-based architecture for constructing multimedia applications. It is open source and widely used in various applications and platforms to handle multimedia processing, streaming, and playback. We will be using gstreamer to integrate pocketsphinx into our ROS project.
+GStreamer is a multimedia framework that provides a pipeline-based architecture for constructing multimedia applications. It is open source and widely used in various applications and platforms to handle multimedia processing, streaming, and playback. We will be using gstreamer to integrate pocketsphinx into our ROS project. Its modular nature will help us examine indivudual elements of the pipeline.
 
 INSTALLATION:  
 
