@@ -80,15 +80,9 @@ INSTALLATION:
 ```
 apt-get install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libgstreamer-plugins-bad1.0-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-tools gstreamer1.0-x gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-qt5 gstreamer1.0-pulseaudio
 ```
-## VOSK Voice Model 
+## VOSK 
 
 The VOSK voice model is a lightweight, open-source speech recognition toolkit that allows for offline voice command processing. In this project, VOSK is integrated with a TurtleBot operating in the Gazebo simulation environment, enabling voice-controlled navigation. Users can issue simple voice commands such as "forward," "stop," "right," "left," and "back" to control the TurtleBot's movements. VOSK supports multiple languages and dialects, increasing its usability across different regions.we had use this in alternative of pocketsphinx in case if it's not working. 
-
-WORKING:  
-Command Recognition: The VOSK model listens for voice commands using a microphone.<br>
-Command Processing: Upon detecting a command, VOSK processes the audio input and converts it into text.<br>
-Command Execution: The recognized command is then sent to the TurtleBot in the Gazebo environment, where it triggers the corresponding movement (e.g., "forward" to move ahead, "left" to turn left).<br>
-Feedback: The system can provide real-time feedback by confirming the received command or adjusting the TurtleBot's movement accordingly.<br>
 
 INSTALLATION:  
 
@@ -103,5 +97,14 @@ unzip vosk-model-small-en-us-0.15.zip
 
 [VOSK GitHub Repository](https://github.com/alphacep/vosk-api): The official repository for the VOSK API.<br>
 [VOSK Model Setup for ROS](https://github.com/alphacep/vosk-api/blob/master/doc/ros.md): Guide to setting up VOSK with ROS for voice control applications.<br>
+
+## Running Voice Models in Turtlebot
+ 
+1. **Recognition :** A publisher node with the voice models listens to microphone input for voice input.
+2. **Processing :** Upon detecting a command, the voice model converts the voice input into string data.
+3. **Publishing :** The string data is published over a speech topic.
+4. **Execution :** A node with a subscriber and a publisher, listens for the incoming data over the topic and published relevant commands to the turtlebot3 topics.
+
+
 
 
