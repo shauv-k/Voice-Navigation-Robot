@@ -1,1 +1,1 @@
-This folder contains the integration of Pocketsphinx with Gstreamer.
+Integration of Pocketsphinx with Gstreamer.
