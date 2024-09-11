@@ -53,6 +53,8 @@ BASIC SIMULATION:
    export TURTLEBOT3_MODEL=burger
    roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
    ```
+![ezgif-1-2f630658bd](https://github.com/user-attachments/assets/0e1b9ee7-16bb-45a3-9458-2d36231953f0)
+
 
 ## SLAM
 
