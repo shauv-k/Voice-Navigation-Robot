@@ -13,7 +13,9 @@
 
 ## Gazebo
 
-Gazebo is a robotics simulation environment included within ROS. It provides a 3D physics-based simulation of robots, environments, and sensors, allowing users to simulate and test robotic systems in a virtual environment before deploying them in the real world. We will use Turtlebot 3 inside gazebo for our simulations.
+Gazebo is a robotics simulation environment included within ROS. It provides a 3D physics-based simulation of robots, environments, and sensors, allowing users to simulate and test robotic systems in a virtual environment before deploying them in the real world. We will use Turtlebot 3 inside gazebo for our simulations.<br>
+![Screenshot_from_2024-07-08_19-38-48_optimized](https://github.com/user-attachments/assets/ebf896a3-99d9-4b0d-b8c7-bb94ffbdb0f3)
+
 
 ## Turtlebot 3
 
