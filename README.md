@@ -12,7 +12,7 @@ To create a voice-controlled robot using ROS that can be controlled using voice 
 * Gstreamer
 
 ## How It Works
-1. **Pipeline :** A Gstreamer pipeline is established to integrate the voice model and establish a modular communication between hardwares.
+1. **Pipeline :** A Gstreamer pipeline is established to integrate the voice model and establish a modular communication between components.
 2. **Recognition :** A ROS publisher node with the voice models listens to microphone input for voice input.
 3. **Processing :** Upon detecting a command, the voice model converts the voice input into string data.
 4. **Publishing :** The string data is published over a speech topic.
