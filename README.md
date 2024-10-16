@@ -12,9 +12,9 @@
 ## How It Works
 
 ## Turtlesim
-Turtlesim is a package provided with ROS that is designed for learning the basic concepts of ROS. It demonstrates the basic principles of ROS and gives you an overview of how ROS communications and systems are designed.
+Turtlesim is a basic, beginner-friendly simulator package in ROS that is designed for learning the basic concepts of ROS. It demonstrates the basic principles of ROS and gives you an overview of how ROS communications and systems are designed.
 
-Here are few basic tasks on turtlesim: 
+A few basic tasks on turtlesim: 
 
 > 1.Square Spiral
 ### ![ezgif-2-9f758776e7](https://github.com/sangwan7gaurav/Voice_Navigation/assets/138971930/e48e4f3d-5b82-48fc-820c-ffeda10232f2) 
@@ -29,7 +29,10 @@ Here are few basic tasks on turtlesim:
 
 ## Gazebo
 
-Gazebo is a robotics simulation environment included within ROS. It provides a 3D physics-based simulation of robots, environments, and sensors, allowing users to simulate and test robotic systems in a virtual environment before deploying them in the real world. We will use Turtlebot 3 inside gazebo for our simulations.<br>
+Gazebo is a robotics simulation environment included within ROS. It provides a 3D physics-based simulation of robots, environments, and sensors, allowing users to simulate and test robotic systems in a virtual environment before deploying them in the real world.
+
+A basic gazebo model we created:
+
 ![Screenshot_from_2024-07-08_19-38-48_optimized](https://github.com/user-attachments/assets/ebf896a3-99d9-4b0d-b8c7-bb94ffbdb0f3)
 
 
@@ -37,6 +40,8 @@ Gazebo is a robotics simulation environment included within ROS. It provides a 3
 
 TurtleBot 3 is a versatile open source robot platform designed for education, research, and prototyping applications in robotics. It is fully compatible with ROS, making it easy to integrate with ROS-based software libraries, tools, and simulations allowing users to leverage the extensive ROS ecosystem for developing and testing robotic applications.
 
+
+RESOURCES:
 [Turtlebot 3 Manual](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)
 
 INSTALLATION:
