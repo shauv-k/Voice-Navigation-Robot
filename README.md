@@ -16,7 +16,7 @@ Turtlesim is a package provided with ROS that is designed for learning the basic
 
 Here are few basic tasks on turtlesim: 
 
-> 1.square spiral
+> 1.Square Spiral
 ### ![ezgif-2-9f758776e7](https://github.com/sangwan7gaurav/Voice_Navigation/assets/138971930/e48e4f3d-5b82-48fc-820c-ffeda10232f2) 
 > 2.Circle
 # ![2](https://github.com/sangwan7gaurav/Voice_Navigation/assets/138971930/afdc9c2d-79d7-4569-9bac-3cb6f46373ac)
