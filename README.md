@@ -1,5 +1,6 @@
 # Voice Navigation Robot
-# Voice-Navigation-Robot-IvLabs
+
+## Objective
 
 ## Requirements
 
@@ -7,6 +8,8 @@
 * ROS Noetic
 * Pocketsphinx
 * Gstreamer
+
+## How It Works
 
 ## Turtlesim
 Turtlesim is a simple application (called package by using the ROS terminology) that is designed for learning the basic concepts of ROS. It demonstrates the basic principles of ROS and gives you an overview of how ROS is used in real-life robotic systems.
