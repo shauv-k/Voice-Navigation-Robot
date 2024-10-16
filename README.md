@@ -2,6 +2,8 @@
 
 ## Objective
 
+To create a voice-controlled robot using ROS that can be controlled using voice commands to navigate and perform tasks.
+
 ## Requirements
 
 * Ubuntu 20.04
@@ -14,7 +16,7 @@
 2. **Recognition :** A ROS publisher node with the voice models listens to microphone input for voice input.
 3. **Processing :** Upon detecting a command, the voice model converts the voice input into string data.
 4. **Publishing :** The string data is published over a speech topic.
-5. **Execution :** A node with a subscriber and a publisher, listens for the incoming data over the topic and published relevant commands to the robot.
+5. **Execution :** A node with a subscriber and a publisher, listens for the incoming data over the topic and publishes relevant commands to the robot.
 
 
 ## Turtlesim
@@ -132,3 +134,5 @@ RESOURCES:
 
 
 ### Why Two Models?
+
+Both of these models provide vastly different benifits. Pocketsphinx is a lightweight library while VOSK is resource intensive. However setting up dictionaries and custom LM files for pocketsphinx is not as easy. Pocketsphinx is ideal for small vocabularies but VOSK has better accuracy in noisy environments. The ideal library is dependent on the task to be performed.
