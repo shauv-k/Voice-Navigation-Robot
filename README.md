@@ -78,7 +78,8 @@ BASIC SIMULATION:
 
 
 RESOURCES:
-[Turtlebot 3 Manual](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)
+
+[Turtlebot 3 Manual](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)<br>
 
 ## SLAM
 
@@ -125,8 +126,9 @@ unzip vosk-model-small-en-us-0.15.zip
 
 2. Load the model into your Vosk speech recognition code by specifying the path to the unzipped model directory.
 
-[VOSK GitHub Repository](https://github.com/alphacep/vosk-api): The official repository for the VOSK API.<br>
-[VOSK Model Setup for ROS](https://github.com/alphacep/vosk-api/blob/master/doc/ros.md): Guide to setting up VOSK with ROS for voice control applications.<br>
+RESOURCES:
+
+[VOSK GitHub Repository](https://github.com/alphacep/vosk-api)<br>
 
 
 ### Why Two Models?
