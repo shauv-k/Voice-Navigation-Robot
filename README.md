@@ -12,7 +12,9 @@
 ## How It Works
 
 ## Turtlesim
-Turtlesim is a simple application (called package by using the ROS terminology) that is designed for learning the basic concepts of ROS. It demonstrates the basic principles of ROS and gives you an overview of how ROS is used in real-life robotic systems.
+Turtlesim is a package provided with ROS that is designed for learning the basic concepts of ROS. It demonstrates the basic principles of ROS and gives you an overview of how ROS communications and systems are designed.
+
+Here are few basic tasks on turtlesim: 
 
 > 1.square spiral
 ### ![ezgif-2-9f758776e7](https://github.com/sangwan7gaurav/Voice_Navigation/assets/138971930/e48e4f3d-5b82-48fc-820c-ffeda10232f2) 
