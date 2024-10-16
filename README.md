@@ -10,20 +10,24 @@
 * Gstreamer
 
 ## How It Works
+1. **Pipeline :** A Gstreamer pipeline is established to integrate the voice model and establish a modular communication between hardwares.
+2. **Recognition :** A ROS publisher node with the voice models listens to microphone input for voice input.
+3. **Processing :** Upon detecting a command, the voice model converts the voice input into string data.
+4. **Publishing :** The string data is published over a speech topic.
+5. **Execution :** A node with a subscriber and a publisher, listens for the incoming data over the topic and published relevant commands to the robot.
+
 
 ## Turtlesim
 Turtlesim is a basic, beginner-friendly simulator package in ROS that is designed for learning the basic concepts of ROS. It demonstrates the basic principles of ROS and gives you an overview of how ROS communications and systems are designed.
 
-A few basic tasks on turtlesim: 
-
 > 1.Square Spiral
 ### ![ezgif-2-9f758776e7](https://github.com/sangwan7gaurav/Voice_Navigation/assets/138971930/e48e4f3d-5b82-48fc-820c-ffeda10232f2) 
 > 2.Circle
-# ![2](https://github.com/sangwan7gaurav/Voice_Navigation/assets/138971930/afdc9c2d-79d7-4569-9bac-3cb6f46373ac)
+### ![2](https://github.com/sangwan7gaurav/Voice_Navigation/assets/138971930/afdc9c2d-79d7-4569-9bac-3cb6f46373ac)
 > 3.Square
-# ![1](https://github.com/sangwan7gaurav/Voice_Navigation/assets/138971930/4d06d620-a81b-4201-8106-b02912b38383)
+### ![1](https://github.com/sangwan7gaurav/Voice_Navigation/assets/138971930/4d06d620-a81b-4201-8106-b02912b38383)
 > 4.Go to Goal
-# ![ezgif-2-e18b684b14](https://github.com/sangwan7gaurav/Voice_Navigation/assets/138971930/97559c15-b698-4bae-aaad-434488b60987)
+### ![ezgif-2-e18b684b14](https://github.com/sangwan7gaurav/Voice_Navigation/assets/138971930/97559c15-b698-4bae-aaad-434488b60987)
 
 
 
@@ -31,7 +35,6 @@ A few basic tasks on turtlesim:
 
 Gazebo is a robotics simulation environment included within ROS. It provides a 3D physics-based simulation of robots, environments, and sensors, allowing users to simulate and test robotic systems in a virtual environment before deploying them in the real world.
 
-A basic gazebo model we created:
 
 ![Screenshot_from_2024-07-08_19-38-48_optimized](https://github.com/user-attachments/assets/ebf896a3-99d9-4b0d-b8c7-bb94ffbdb0f3)
 
@@ -40,9 +43,6 @@ A basic gazebo model we created:
 
 TurtleBot 3 is a versatile open source robot platform designed for education, research, and prototyping applications in robotics. It is fully compatible with ROS, making it easy to integrate with ROS-based software libraries, tools, and simulations allowing users to leverage the extensive ROS ecosystem for developing and testing robotic applications.
 
-
-RESOURCES:
-[Turtlebot 3 Manual](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)
 
 INSTALLATION:
 1) Run the following commands in your terminal. Make sure to clone the repositories into your workspace.
@@ -77,13 +77,26 @@ BASIC SIMULATION:
 ![ezgif-1-2f630658bd](https://github.com/user-attachments/assets/0e1b9ee7-16bb-45a3-9458-2d36231953f0)
 
 
+RESOURCES:
+[Turtlebot 3 Manual](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)
+
 ## SLAM
 
+## Gstreamer
 
+GStreamer is a multimedia framework that provides a pipeline-based architecture for constructing multimedia applications. It is open source and widely used in various applications and platforms to handle multimedia processing, streaming, and playback. We will be using gstreamer to integrate pocketsphinx into our ROS project. Its modular nature will help us examine indivudual elements of the pipeline.
 
-## Pocketsphinx
+INSTALLATION:  
 
-PocketSphinx is a lightweight speech recognition engine developed by Carnegie Mellon University (CMU). We are using pocketsphinx with out own custom dictionary for the purpose of speech recognition and voice control of the robot.
+```
+apt-get install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libgstreamer-plugins-bad1.0-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-tools gstreamer1.0-x gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-qt5 gstreamer1.0-pulseaudio
+```
+
+## Voice Models
+
+### Pocketsphinx
+
+PocketSphinx is a lightweight speech recognition engine developed by Carnegie Mellon University (CMU).
 
 INSTALLATION:
 1) Clone the [pocketsphinx](https://github.com/cmusphinx/pocketsphinx) and [sphinxbase](https://github.com/cmusphinx/sphinxbase) repostories into your workspaces.
@@ -96,18 +109,10 @@ INSTALLATION:
    make install
    ```
 
-## Gstreamer
 
-GStreamer is a multimedia framework that provides a pipeline-based architecture for constructing multimedia applications. It is open source and widely used in various applications and platforms to handle multimedia processing, streaming, and playback. We will be using gstreamer to integrate pocketsphinx into our ROS project. Its modular nature will help us examine indivudual elements of the pipeline.
+### VOSK 
 
-INSTALLATION:  
-
-```
-apt-get install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libgstreamer-plugins-bad1.0-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-tools gstreamer1.0-x gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-qt5 gstreamer1.0-pulseaudio
-```
-## VOSK 
-
-The VOSK voice model is a lightweight, open-source speech recognition toolkit that allows for offline voice command processing. In this project, VOSK is integrated with a TurtleBot operating in the Gazebo simulation environment, enabling voice-controlled navigation. Users can issue simple voice commands such as "forward," "stop," "right," "left," and "back" to control the TurtleBot's movements. VOSK supports multiple languages and dialects, increasing its usability across different regions.we had use this in alternative of pocketsphinx in case if it's not working. 
+The VOSK voice model is another lightweight, open-source speech recognition toolkit that allows for offline voice command processing.
 
 INSTALLATION:  
 
@@ -123,13 +128,5 @@ unzip vosk-model-small-en-us-0.15.zip
 [VOSK GitHub Repository](https://github.com/alphacep/vosk-api): The official repository for the VOSK API.<br>
 [VOSK Model Setup for ROS](https://github.com/alphacep/vosk-api/blob/master/doc/ros.md): Guide to setting up VOSK with ROS for voice control applications.<br>
 
-## Running Voice Models in Turtlebot
- 
-1. **Recognition :** A publisher node with the voice models listens to microphone input for voice input.
-2. **Processing :** Upon detecting a command, the voice model converts the voice input into string data.
-3. **Publishing :** The string data is published over a speech topic.
-4. **Execution :** A node with a subscriber and a publisher, listens for the incoming data over the topic and published relevant commands to the turtlebot3 topics.
 
-
-
-
+### Why Two Models?
