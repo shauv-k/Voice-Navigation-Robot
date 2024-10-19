@@ -4,14 +4,6 @@
 
 To create a voice-controlled robot using ROS that can be controlled using voice commands to navigate and perform tasks.
 
-Utilities
-
- 1) Assistance for people with disabilities
- 2) Home automation
- 3) Entertainment and education
- 4) Industrial applications
-
-
 ## Requirements
 
 * Ubuntu 20.04
