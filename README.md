@@ -84,6 +84,8 @@ RESOURCES:
 [Turtlebot 3 Manual](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)<br>
 
 ## SLAM
+![WhatsApp GIF 2024-12-14 at 19 39 52](https://github.com/user-attachments/assets/4aba1b13-c68b-4894-9edd-8c033a2fdcfd)
+
 
 ## Gstreamer
 
