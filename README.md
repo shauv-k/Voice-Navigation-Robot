@@ -85,9 +85,9 @@ RESOURCES:
 
 ## SLAM
 
-Integration of Simultaneous Localization and Mapping (SLAM) can enable seamless navigation in dynamic environments and plan paths in real-time. This synergy allows the robot to autonomously execute commands like "Go to the kitchen" or "Explore the room," with accurate obstacle avoidance and adaptive pathfinding. By leveraging SLAM, the robot ensures precise navigation even in unknown or changing environments, enhancing user interaction and overall functionality.
-
 ![WhatsApp GIF 2024-12-14 at 19 39 52](https://github.com/user-attachments/assets/4aba1b13-c68b-4894-9edd-8c033a2fdcfd)
+
+Integration of Simultaneous Localization and Mapping (SLAM) can enable seamless navigation in dynamic environments and plan paths in real-time. This synergy allows the robot to autonomously execute commands like "Go to the kitchen" or "Explore the room," with accurate obstacle avoidance and adaptive pathfinding. By leveraging SLAM, the robot ensures precise navigation even in unknown or changing environments, enhancing user interaction and overall functionality.
 
 We explored two SLAM algorithms in our simulations, namely GMapping and HectorSLAM. GMapping and Hector SLAM serve different use cases in robotics based on their strengths. GMapping relies on particle filters and requires odometry data, making it well-suited for low-speed robots operating in static or semi-static environments, such as offices or warehouses. In contrast, Hector SLAM does not depend on odometry and uses scan matching for mapping, making it ideal for high-speed or dynamic applications, such as drones or robots without reliable wheel encoders. While GMapping excels in precise localization for slower robots, Hector SLAM is optimized for real-time mapping in high-motion scenarios.
 
